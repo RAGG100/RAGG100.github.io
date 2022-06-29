@@ -12,6 +12,7 @@ html{
 h1{
     font-family: 'Great Vibes', cursive;
     font-size: 30pt;
+    letter-spacing: 0.25em;
     color: rgb(91, 185, 223);
 }
 
