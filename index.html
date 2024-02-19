@@ -4,13 +4,13 @@
         <!-- Metadata -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Invitación XV Sofia</title>
+        <title>Invitación XV Reny</title>
 
         <!-- Open Graph Protocol-->
-        <meta property="og:title" content="Invitación XV Sofia"/>
+        <meta property="og:title" content="Invitación XV Reny"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://ragg100.github.io/"/>
-        <meta property="og:description" content="Te invitamos cordialmente a celebrar el cumpleaños número 15 de Sofia.">
+        <meta property="og:description" content="Te invitamos cordialmente a celebrar el cumpleaños número 15 de Reny.">
         <meta property="og:image" content="https://ragg100.github.io/assets/imgs/Sofia-2.jpg"/>
         <meta property="og:image:secure_url" content="https://ragg100.github.io/assets/imgs/Sofia-2.jpg"/>
 
@@ -20,36 +20,90 @@
         <!-- Para fuentes -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=News+Cycle&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Para íconos -->
         <link href="./assets/css/remixicon.css" rel="stylesheet">
         <!-- Principal -->
         <link href="./assets/css/main.css" rel="stylesheet">
+        <script src="./assets/javascript/reloj.js"></script>
+        <script src="./assets/javascript/galeria.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                update_Countdown();
+                // Refresh every second
+                setInterval(update_Countdown, 1000);
+            })
+        </script>
     </head>
     <body>
+        <audio controls style="position: fixed; top: 0%; right: 0%; width: 100px;">
+            <source src="./assets/audio/song.mp3" type="audio/mp3">
+        </audio>              
         <!-- Encabezado -->
-        <section class="container" style="background-image: url('./assets/imgs/fondo-1.jpg')">
-            <div class="content" style="background-color:rgba(255, 255, 255,0.3)">
-                <h1>Sofia Monserrat</h1>
-                <p class="paragraph">"Hay momentos en la vida que son irrepetibles, pero compartirlos con las personas que más quieres los hace inolvidables"</p>
+        <section class="container" style="background-image: url('./assets/imgs/Header.jpg'); background-position: center center; background-size: cover; width: 100%; height: 100vh;">
+            <div style="position: absolute; bottom: 0%; left: 0%; right: 0%;">
+                <p class="title shadow-text" style="color: white; font-family: Merriweater;">¡Mis XV Años!</p>
+                <h1 class="shadow-text" style="color: white; font-size: 60pt;">Renata Graciela</h1>
+                <p class="title shadow-text" style="color: white; font-family: Merriweater;">09-Marzo-2024</p>
+            </div>
+        </section>
+            
+        <!-- Fecha -->
+        <section class="container" style="display: flex; flex-direction: column; align-items: center; background-color: black;">
+            <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
+                <div class="title cell" style="font-family: Merriweater;">
+                    <p>
+                        <span id="days"></span><br>dias
+                    </p>
+                </div>
+                <div class="title cell" style="font-family: Merriweater;">
+                    <p>
+                        <span id="hours"></span><br>horas
+                    </p>
+                </div>
+                <div class="title cell" style="font-family: Merriweater;">
+                    <p>
+                        <span id="minutes"></span><br>min.
+                    </p>
+                </div>
+                <div class="title cell" style="font-family: Merriweater;">
+                    <p>
+                        <span id="seconds"></span><br>seg.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p style="color: rgb(250, 209, 248); width: 100%; bottom: 0%; font-size: larger; background-color: black;">"Hay momentos en la vida que son irrepetibles,<br>pero compartirlos con las personas que más quieres<br>los hace inolvidables"</p>
             </div>
         </section>
 
-        <!-- Foto -->
-        <section class="container">
-            <img src="./assets/imgs/Sofia-1.jpg" alt="Foto Sofia">
-        </section>
-
-        <!-- Fecha -->
-        <section class="container" style="background-image: url('./assets/imgs/fondo-2.jpg')">
-            <!-- Fecha -->
-            <div class="content">
-                <div class="shadow-box">
-                    <p class="title">¡Mis XV Años!</p>
-                    <p class="title">24-Julio-2022</p>    
-                    <!-- Pendiente: Linea -->
-                    <p class="paragraph">¡Mis papás y yo estamos muy felices!<br>
-                        y queremos compartirlo con todos ustedes, preparando una fiesta muy especial con gente linda, momentos emotivos, risas y muchas sorpresas más.</p>
+        <!-- Lugar -->
+        <section class="container" style="flex-direction: row; flex-wrap: wrap;">
+            <p class="title" style="width: 100%;">Acompáñame</p>
+            <div class="container" style="flex-flow: row wrap; width: 100%; align-items: stretch;">
+                <div hidden class="shadow-box" style="width: 39%;">
+                    <h2>Ceremonia Religiosa</h2>
+                    <p>Parroquia la Ascención del Señor</p>
+                    <img src="./assets/imgs/parroquia.jpg" style="width: 100%; border-radius: 10px;">
+                    <p>6:30 p.m.</p>
+                    <p>Viviano L. Villareal #453, Col. Burócratas del Estado, Monterrey, N.L.</p>
+                    <a href="https://goo.gl/maps/VrcweEdxa8Atur6C9" target="_blank">
+                        <div class="button">
+                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shadow-box" style="width: 39%;">
+                    <h2>Evento</h2>
+                    <p>Quinta Gardenias</p>
+                    <img src="./assets/imgs/salon.jpg" style="width: 100%; border-radius: 10px;">
+                    <p>6:30 p.m.</p>
+                    <p>Priv. Gardenia 329, Moderna, 64530 Monterrey, N.L.</p>
+                    <a href="https://maps.app.goo.gl/RKapmkyqQ4CB4djf6" target="_blank">
+                        <div class="button">
+                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -60,103 +114,81 @@
             rgb(255, 166, 133) coral
             rgb(168, 235, 212) aquamarine
         -->
-        <section class="container" style="background-color:rgb(211, 243, 255)">
+        <section class="container" style="background-color:rgb(255, 211, 238)">
             <div class="content">
                 <p class="title">En agradecimiento a mis padres</p>
-                <p class="subtitle">Marittsa Yesenia Garza Luna</p>
-                <p class="subtitle">Ricardo Francisco Guzmán Méndez</p>    
+                <p class="subtitle">Nancy Luna Garza</p>
+                <p class="subtitle">Marvin Rodrigo Valero Macías</p>    
             </div>
         </section>
 
-        <!-- Lugar -->
-        <section class="container">
-            <div class="content">
-                <p class="title">Acompáñame</p>
-                <div class="shadow-box">
-                    <h2>Ceremonia Religiosa</h2>
-                    <p>Parroquia la Ascención del Señor</p>
-                    <p>6:30 p.m.</p>
-                    <p>Viviano L. Villareal #453, Col. Burócratas del Estado, Monterrey, N.L.</p>
-                    <a href="https://goo.gl/maps/VrcweEdxa8Atur6C9" target="_blank">
-                        <div class="button">
-                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
-                        </div>
-                    </a>
+        <!-- Mesa de regalos -->
+        <section class="container" style="background-image: url('./assets/imgs/fondo-5.jpg');">
+            <div class="content" style="display: flex; flex-direction: column; width: 100%;">
+                <div class="shadow-box" style="width: 40%; margin: 2%;">
+                    <p class="paragraph" style="color:rgb(226, 75, 209); font-weight: 600;font-size: 1.2em;">Mi mejor regalo es compartir contigo este gran día. Sin embargo, si deseas obsequiarme algo, puedo sugerir las siguientes opciones. </p>    
                 </div>
-                <div class="shadow-box">
-                    <h2>Evento</h2>
-                    <p>Salón Mundo Eventos</p>
-                    <p>8:00 p.m.</p>
-                    <p>Av. Lincoln #12005, Col. Cumbres San Agustín, Monterrey, N.L.</p>
-                    <a href="https://goo.gl/maps/PNrFyHE34RQjf8XX6" target="_blank">
-                        <div class="button">
-                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
+                <div class="content" style="display: flex; width: 100%; align-items: stretch;">
+                    <!-- Regalo -->
+                    <div class="box" style="padding:0.5em; border-radius: 5%; width: 30%;">
+                        <div class="circle">
+                            <i class="ri-gift-line"></i>
                         </div>
-                    </a>
+                        <p class="subtitle" style="margin:0.2em;">Regalo</p>
+                        <img class="svg" src="./assets/imgs/Regalo.svg" >
+                    </div>
+        
+                    <!-- Sobres -->
+                    <div class="box" style="padding:0.5em; border-radius: 5%; width: 30%;">
+                        <div class="circle">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <p class="subtitle" style="margin:0.2em;">Sobre</p>
+                        <img class="svg" src="./assets/imgs/Sobre.svg" style="margin: 15% 0px 10% 0px;">
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Instagram -->
-        <section class="container" style="background-image: url('./assets/imgs/fondo-4.jpg');">
-            <div class="content box" style="padding:0.5em;">
+        <section class="container" style="display: flex; align-items: center;">
+            <div style="background-image: url(./assets/imgs/IG-Photo.jpg); background-position: center center; background-size: cover; width: 50%; height: 100vh;">
+            </div>
+            <div class="shadow-box" style="padding:0.5em; border-radius: 5%; width: 50%; margin: 0px; height: 30%;">
                 <div class="circle">
                     <i class="ri-instagram-line"></i>
                 </div>
-                <p class="subtitle" style="margin:0.2em;">Instagram: marittsa_garza</p>
+                <p class="subtitle" style="margin:0.2em;">Instagram</p>
+                <a href="https://www.instagram.com/reny_vl/?img_index=1" target="_blank"><img src="./assets/imgs/QR.png" loading="lazy"></a>
                 <p>Recuerda tomar muchas fotos y compartirlas en Instagram</p>
             </div>
         </section>
 
         <!-- Vestimenta -->
         <section class="container">
-            <div class="content">
+            <div class="content" style="width: 100%;">
                 <div>
                     <p class="title">Código de vestimenta</p>
                     <h3>Hombres y Mujeres</h3>
-                    <p class="subtitle">Formal</p>
+                    <p class="subtitle">Semiformal</p>
                     <img src="./assets/imgs/vestimenta.png" loading="lazy" alt="Codigo de vestimenta" class="image">
                 </div>
             </div>
         </section>
 
-        <!-- Mesa de regalos -->
-        <section class="container" style="background-image: url('./assets/imgs/fondo-5.jpg')">
-            <div class="content">
-                <div class="shadow-box">
-                    <p class="paragraph" style="color:rgb(35, 163, 214); font-weight: 600;font-size: 1.2em;">Mi mejor regalo es compartir contigo este gran día. Sin embargo, si deseas obsequiarme algo, puedo sugerir las siguientes opciones. </p>    
-                </div>
-                <!-- Regalo -->
-                <div class="box" style="padding:0.5em;">
-                    <div class="circle">
-                        <i class="ri-gift-line"></i>
-                    </div>
-                    <p class="subtitle" style="margin:0.2em;">Regalo</p>
-                    <img class="svg" src="./assets/imgs/Regalo.svg">
-                </div>
-    
-                <!-- Sobres -->
-                <div class="box" style="padding:0.5em;">
-                    <div class="circle">
-                        <i class="ri-mail-line"></i>
-                    </div>
-                    <p class="subtitle" style="margin:0.2em;">Sobre</p>
-                    <img class="svg" src="./assets/imgs/Sobre.svg">
-                </div>
-            </div>
-        </section>
 
         <!-- Confirmación -->
-        <section class="container" style="background-image:url('./assets/imgs/fondo-3.webp')">
-            <div class="content">
-                <div class="box">
+        <section class="container" style="background-image:url('./assets/imgs/fondo-1.avif')">
+            <div class="content" style="width: 40%;">
+                <div class="box" style="border-radius: 5%;">
                     <p class="subtitle">Reserva tu lugar</p>
                     <p class="title">RSVP</p>
                     <!-- Pendiente: Linea -->
                     <p>Espero de corazón puedas acompañarme<br>
                     Por favor confirma tu asistencia para agregarte<br>
                     a mi lista de invitados.</p>
-                    <a href="https://wa.me/528110660682?text=Confirmamos%20nuestra%20asistencia%20al%20XV%20de%20Sofia.%20Te%20acompañaremos%20(%20%20)%20personas." target="_blank">
+                    <a href="https://chat.whatsapp.com/HOZcpA6lVLKGJl2TJ67PHp" target="_blank">
                         <div class="button">
                             <p><i class="ri-whatsapp-line"></i> Boton confirmación</p>
                         </div>
@@ -165,13 +197,23 @@
             </div>
         </section>
 
+        <!-- Galeria -->
+        <section class="container" style="flex-direction: column;">
+            <p class="title">Galeria</p>
+            <div class="container">
+                <button onclick="move(-1)" class="gallery-button">&#11164;</button>
+                <img id="Galeria-1" class="gallery" src="./assets/imgs/Galeria/IMG (1).webp">
+                <button onclick="move(1)" class="gallery-button">&#11166;</button>
+            </div>
+        </section>
+
         <!-- Despedida -->
-        <section class="container" style="background-image: url('./assets/imgs/fondo-6.webp')">
-            <div class="content shadow-box-dark", style="background-color: white">
+        <section class="container" style="background-image: url('./assets/imgs/fondo-2.jpg')">
+            <div class="content shadow-box-dark", style="background-color: white; border-radius: 5%;">
                 <!-- Linea -->
-                <h1>Sofia Monserrat</h1>
-                <h2 style="color:rgb(19, 152, 201); font-weight: 400">¡Los esperamos!</h2>
-                <img src="./assets/imgs/Sofia-2.jpg" alt="Foto Sofía" loading="lazy" class="image-rounded">
+                <h1>Renata Graciela</h1>
+                <h2 style="color:rgb(201, 19, 165); font-weight: 400">¡Los esperamos!</h2>
+                <img src="./assets/imgs/Despedida.jpg" alt="Foto Sofía" loading="lazy" class="image-rounded">
             </div>
         </section>
     </body>
