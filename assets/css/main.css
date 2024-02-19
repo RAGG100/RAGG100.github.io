@@ -10,7 +10,8 @@ Titulos: color: rgb(255, 0, 149);
 Normal:  color: rgb(255, 61, 210);
 */
 html{
-    font-family: 'News Cycle', sans-serif;
+/*    font-family: 'News Cycle', sans-serif;*/
+    font-family: Helvetica, sans-serif;
 }
 
 h1{
