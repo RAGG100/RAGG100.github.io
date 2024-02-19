@@ -100,6 +100,7 @@ a{
     padding: 5%;
     margin: 5% 5%;
     border: solid 0.1em darkmagenta;
+    max-width: 400px;
 }
 
 .button{
@@ -197,6 +198,10 @@ a{
         width: 80%;
     }
     
+    #place {
+        width: 80%;
+    }
+
 /*    .shadow-box{
         padding: 50px;
         margin: 100px 10%;
