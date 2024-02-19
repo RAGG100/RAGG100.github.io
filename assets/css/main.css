@@ -120,7 +120,9 @@ a{
     color: rgb(255, 61, 210);;
     padding: 2px;
     margin: 5px;
-    width: 3em;
+    width: 80%;
+    max-width: 3em;
+    font-size: 1.5em;
     height: 3em;
     align-items: center;
     justify-content: center;
@@ -236,5 +238,9 @@ a{
 
     .gallery{
         min-width: 500px;
+    }
+
+    .cell{
+        font-size: 30pt;
     }
 }
