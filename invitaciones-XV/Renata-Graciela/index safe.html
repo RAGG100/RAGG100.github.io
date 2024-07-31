@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Invitación XV Sofía</title>
+
+        <!-- Open Graph Protocol-->
+        <meta property="og:title" content="Invitación XV Sofía"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://ragg100.github.io/"/>
+        <meta property="og:description" content="Te invitamos cordialmente a celebrar el cumpleaños número 15 de Sofía.">
+        <meta property="og:image" content="https://ragg100.github.io/assets/imgs/Miniatura-0.jpg"/>
+        <meta property="og:image:alt" content="Invitación"/>
+        <meta property="og:image:secure_url" content="https://ragg100.github.io/assets/imgs/Miniatura-0.jpg"/>
+
+        <!-- Stylesheets-->
+        <!-- Para normalizar -->
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" >
+        <!-- Para fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Para íconos -->
+        <link href="./assets/css/remixicon.css" rel="stylesheet">
+        <!-- Principal -->
+        <link href="./assets/css/main.css" rel="stylesheet">
+        <script src="./assets/javascript/reloj.js"></script>
+        <script src="./assets/javascript/galeria.js"></script>
+
+        <!-- Javascript -->
+        <!-- Cuenta regresiva-->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                update_Countdown();
+                // Refresh every second
+                setInterval(update_Countdown, 1000);
+            })
+        </script>
+    </head>
+    <body>
+        <!-- Botón de audio con canción -->
+        <audio controls loop style="position: fixed; top: 0%; right: 0%; width: 100px;">
+            <source src="./assets/audio/song.mp3" type="audio/mp3">
+        </audio>              
+
+        <!-- Encabezado -->
+        <section class="container back-image" style="background-image: url('./assets/imgs/Header.webp');">
+            <div style="position: absolute; inset: auto 0% 0% 0%; color: white;">
+                <h2 class="shadow-text">¡Mis XV Años!</h2>
+                <h1 class="shadow-text" style="color: white; font-size: 60pt;">Renata Graciela</h1>
+                <h2 class="shadow-text">09-Marzo-2024</h2>
+            </div>
+        </section>
+            
+        <!-- Fecha -->
+        <section class="container" style="flex-direction: column; background-color: black;">
+            <div class="container">
+                <div class="cell">
+                    <p><span id="days"></span><br>dias</p>
+                </div>
+                <div class="cell">
+                    <p><span id="hours"></span><br>hrs.</p>
+                </div>
+                <div class="cell">
+                    <p><span id="minutes"></span><br>min.</p>
+                </div>
+                <div class="cell">
+                    <p><span id="seconds"></span><br>seg.</p>
+                </div>
+            </div>
+            <div>
+                <p style="color: rgb(250, 209, 248); bottom: 0%; font-size: larger;">Hay momentos en la vida que son irrepetibles,<br>pero compartirlos con las personas que más quieres<br>los hace inolvidables</p>
+            </div>
+        </section>
+
+        <!-- Lugar -->
+        <section class="container" style="flex-flow: row wrap;">
+            <p class="title">Acompáñame</p>
+            <div class="container" style="flex-flow: row wrap; align-items: stretch;">
+                <div class="shadow-box" style="width: 39%;">
+                    <h2>Ceremonia Religiosa</h2>
+                    <p>Parroquia la Ascención del Señor</p>
+                    <img src="./assets/imgs/parroquia.jpg" style="width: 100%; border-radius: 10px;">
+                    <p>6:30 p.m.</p>
+                    <p>Viviano L. Villareal #453, Col. Burócratas del Estado, Monterrey, N.L.</p>
+                    <a href="https://goo.gl/maps/VrcweEdxa8Atur6C9" target="_blank">
+                        <div class="button">
+                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shadow-box" style="width: 39%;">
+                    <h2>Evento</h2>
+                    <p>Quinta Gardenias</p>
+                    <img src="./assets/imgs/salon.jpg" style="width: 100%; border-radius: 10px;">
+                    <p>6:30 p.m.</p>
+                    <p>Priv. Gardenia 329, Moderna, 64530 Monterrey, N.L.</p>
+                    <a href="https://maps.app.goo.gl/RKapmkyqQ4CB4djf6" target="_blank">
+                        <div class="button">
+                            <p><i class="ri-map-pin-line"></i> Ver mapa</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agradecimientos -->
+        <!-- Colores
+            rgb(211, 243, 255) celeste
+            rgb(255, 166, 133) coral
+            rgb(168, 235, 212) aquamarine
+        -->
+        <section class="container" style="background-color:rgb(255, 211, 238); flex-direction: row;">
+            <div>
+                <p class="title">En agradecimiento a mis padres</p>
+                <p class="subtitle">Nancy Luna Garza</p>
+                <p class="subtitle">Marvin Rodrigo Valero Macías</p>    
+            </div>
+        </section>
+
+        <!-- Mesa de regalos -->
+        <section class="container" style="background-image: url('./assets/imgs/fondo-5.jpg');">
+            <div class="container" style="flex-direction: column;">
+                <div class="shadow-box" style="width: 80%; margin: 2%; max-width: 500px;">
+                    <p class="paragraph" style="color:rgb(226, 75, 209); font-weight: 600;font-size: 1.2em;">Mi mejor regalo es compartir contigo este gran día. Sin embargo, si deseas obsequiarme algo, puedo sugerir las siguientes opciones. </p>    
+                </div>
+                <div class="container" style="align-items: stretch;">
+                    <!-- Regalo -->
+                    <div class="box" style="padding:0.5em; border-radius: 5%; width: 45%;">
+                        <div class="circle">
+                            <i class="ri-gift-line"></i>
+                        </div>
+                        <p class="subtitle" style="margin:0.2em;">Regalo</p>
+                        <img class="svg" src="./assets/imgs/Regalo.svg" >
+                    </div>
+        
+                    <!-- Sobres -->
+                    <div class="box" style="padding:0.5em; border-radius: 5%; width: 45%;">
+                        <div class="circle">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <p class="subtitle" style="margin:0.2em;">Sobre</p>
+                        <img class="svg" src="./assets/imgs/Sobre.svg" style="margin: 15% 0px 10% 0px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Instagram -->
+        <section class="container">
+            <div style="background-image: url(./assets/imgs/IG-Photo.jpg); background-position: center center; background-size: cover; width: 50%; height: 100vh;">
+            </div>
+            <div class="shadow-box" style="padding:0.5em; border-radius: 5%; width: 50%; margin: 0px; height: 30%;">
+                <div class="circle">
+                    <i class="ri-instagram-line"></i>
+                </div>
+                <p class="subtitle" style="margin:0.2em;">Instagram</p>
+                <a href="https://www.instagram.com/reny_vl/?img_index=1" target="_blank"><img class="image" src="./assets/imgs/QR.png" loading="lazy"></a>
+                <p>Recuerda tomar muchas fotos y compartirlas en Instagram</p>
+            </div>
+        </section>
+
+        <!-- Vestimenta -->
+        <section class="container">
+            <div style="width: 100%;">
+                <p class="title">Código de vestimenta</p>
+                <h3>Hombres y Mujeres</h3>
+                <p class="subtitle">Semiformal</p>
+                <img src="./assets/imgs/vestimenta.png" loading="lazy" alt="Codigo de vestimenta" class="image">
+            </div>
+        </section>
+
+
+        <!-- Confirmación -->
+        <section class="container" style="background-image:url('./assets/imgs/fondo-1.avif')">
+            <div class="container">
+                <div class="box" style="border-radius: 5%; width: 70%; max-width: 300px;">
+                    <p class="subtitle">Reserva tu lugar</p>
+                    <p class="title">RSVP</p>
+                    <p>Espero de corazón puedas acompañarme
+                    por favor confirma tu asistencia para agregarte
+                    a mi lista de invitados.<br>
+                    <strong>(1 persona)</strong>
+                    </p>
+                    <a href="https://chat.whatsapp.com/HOZcpA6lVLKGJl2TJ67PHp" target="_blank">
+                        <div class="button">
+                            <p><i class="ri-whatsapp-line"></i> Boton confirmación</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="container" style="flex-direction: column;">
+            <p class="title">Galeria</p>
+            <div class="container">
+                <button onclick="move(-1)" class="gallery-button"><i class="ri-arrow-left-s-line"></i></button>
+                <img id="Galeria-1" class="gallery image" style="width: 800px; max-width: 80%;" src="./assets/imgs/Galeria/IMG (1).webp">
+                <button onclick="move(1)" class="gallery-button"><i class="ri-arrow-right-s-line"></i></button>
+            </div>
+        </section>
+
+        <!-- Despedida -->
+        <section class="container" style="background-image: url('./assets/imgs/fondo-2.jpg')">
+            <div class="content shadow-box-dark", style="background-color: white; border-radius: 5%;">
+                <!-- Linea -->
+                <h1>Renata Graciela</h1>
+                <h2 style="color: black;">¡Los esperamos!</h2>
+                <img src="./assets/imgs/Despedida.jpg" alt="Foto Sofía" loading="lazy" class="image-rounded">
+            </div>
+        </section>
+    </body>
+</html>
