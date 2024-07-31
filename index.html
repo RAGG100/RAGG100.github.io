@@ -1,3 +1,5 @@
+<!--https://eventobonito.com/invitaciones-digitales-de-xv/modelo-xv-texturas-7/#-->
+<!--https://www.youtube.com/watch?v=wxb_lQDOvcw&list=RDwxb_lQDOvcw&index=2-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,6 +30,9 @@
         <link href="./assets/css/main.css" rel="stylesheet">
         <script src="./assets/javascript/reloj.js"></script>
         <script src="./assets/javascript/galeria.js"></script>
+
+        <!-- Javascript -->
+        <!-- Cuenta regresiva-->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 update_Countdown();
@@ -37,52 +42,46 @@
         </script>
     </head>
     <body>
+        <!-- Botón de audio con canción -->
         <audio controls loop style="position: fixed; top: 0%; right: 0%; width: 100px;">
             <source src="./assets/audio/song.mp3" type="audio/mp3">
         </audio>              
+
         <!-- Encabezado -->
-        <section class="container" style="background-image: url('./assets/imgs/Header.webp'); background-position: center center; background-size: cover; width: 100%; height: 100vh;">
-            <div style="position: absolute; bottom: 0%; left: 0%; right: 0%;">
-                <p class="title shadow-text" style="color: white; font-family: Merriweater;">¡Mis XV Años!</p>
+        <section class="container back-image" style="background-image: url('./assets/imgs/Header.webp');">
+            <div style="position: absolute; inset: auto 0% 0% 0%; color: white;">
+                <h2 class="shadow-text">¡Mis XV Años!</h2>
                 <h1 class="shadow-text" style="color: white; font-size: 60pt;">Renata Graciela</h1>
-                <p class="title shadow-text" style="color: white; font-family: Merriweater;">09-Marzo-2024</p>
+                <h2 class="shadow-text">09-Marzo-2024</h2>
             </div>
         </section>
             
         <!-- Fecha -->
-        <section class="container" style="display: flex; flex-direction: column; align-items: center; background-color: black;">
-            <div style="display: flex; justify-content: center; width: 100%; align-items: center;">
-                <div class="title cell" style="font-family: Merriweater;">
-                    <p>
-                        <span id="days"></span><br>dias
-                    </p>
+        <section class="container" style="flex-direction: column; background-color: black;">
+            <div class="container">
+                <div class="cell">
+                    <p><span id="days"></span><br>dias</p>
                 </div>
-                <div class="title cell" style="font-family: Merriweater;">
-                    <p>
-                        <span id="hours"></span><br>hrs.
-                    </p>
+                <div class="cell">
+                    <p><span id="hours"></span><br>hrs.</p>
                 </div>
-                <div class="title cell" style="font-family: Merriweater;">
-                    <p>
-                        <span id="minutes"></span><br>min.
-                    </p>
+                <div class="cell">
+                    <p><span id="minutes"></span><br>min.</p>
                 </div>
-                <div class="title cell" style="font-family: Merriweater;">
-                    <p>
-                        <span id="seconds"></span><br>seg.
-                    </p>
+                <div class="cell">
+                    <p><span id="seconds"></span><br>seg.</p>
                 </div>
             </div>
             <div>
-                <p style="color: rgb(250, 209, 248); width: 100%; bottom: 0%; font-size: larger; background-color: black;">"Hay momentos en la vida que son irrepetibles,<br>pero compartirlos con las personas que más quieres<br>los hace inolvidables"</p>
+                <p style="color: rgb(250, 209, 248); bottom: 0%; font-size: larger;">Hay momentos en la vida que son irrepetibles,<br>pero compartirlos con las personas que más quieres<br>los hace inolvidables</p>
             </div>
         </section>
 
         <!-- Lugar -->
-        <section class="container" style="flex-direction: row; flex-wrap: wrap;">
-            <p class="title" style="width: 100%;">Acompáñame</p>
-            <div class="container" style="flex-flow: row wrap; width: 100%; align-items: stretch;">
-                <div hidden class="shadow-box" style="width: 39%;">
+        <section class="container" style="flex-flow: row wrap;">
+            <p class="title">Acompáñame</p>
+            <div class="container" style="flex-flow: row wrap; align-items: stretch;">
+                <div class="shadow-box" style="width: 39%;">
                     <h2>Ceremonia Religiosa</h2>
                     <p>Parroquia la Ascención del Señor</p>
                     <img src="./assets/imgs/parroquia.jpg" style="width: 100%; border-radius: 10px;">
@@ -94,7 +93,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="shadow-box" style="width: 80%; max-width: 500px;">
+                <div class="shadow-box" style="width: 39%;">
                     <h2>Evento</h2>
                     <p>Quinta Gardenias</p>
                     <img src="./assets/imgs/salon.jpg" style="width: 100%; border-radius: 10px;">
@@ -115,8 +114,8 @@
             rgb(255, 166, 133) coral
             rgb(168, 235, 212) aquamarine
         -->
-        <section class="container" style="background-color:rgb(255, 211, 238)">
-            <div class="content">
+        <section class="container" style="background-color:rgb(255, 211, 238); flex-direction: row;">
+            <div>
                 <p class="title">En agradecimiento a mis padres</p>
                 <p class="subtitle">Nancy Luna Garza</p>
                 <p class="subtitle">Marvin Rodrigo Valero Macías</p>    
@@ -125,11 +124,11 @@
 
         <!-- Mesa de regalos -->
         <section class="container" style="background-image: url('./assets/imgs/fondo-5.jpg');">
-            <div class="content" style="display: flex; flex-direction: column; width: 100%;">
+            <div class="container" style="flex-direction: column;">
                 <div class="shadow-box" style="width: 80%; margin: 2%; max-width: 500px;">
                     <p class="paragraph" style="color:rgb(226, 75, 209); font-weight: 600;font-size: 1.2em;">Mi mejor regalo es compartir contigo este gran día. Sin embargo, si deseas obsequiarme algo, puedo sugerir las siguientes opciones. </p>    
                 </div>
-                <div class="content" style="display: flex; width: 100%; align-items: stretch;">
+                <div class="container" style="align-items: stretch;">
                     <!-- Regalo -->
                     <div class="box" style="padding:0.5em; border-radius: 5%; width: 45%;">
                         <div class="circle">
@@ -153,7 +152,7 @@
 
 
         <!-- Instagram -->
-        <section class="container" style="display: flex; align-items: center;">
+        <section class="container">
             <div style="background-image: url(./assets/imgs/IG-Photo.jpg); background-position: center center; background-size: cover; width: 50%; height: 100vh;">
             </div>
             <div class="shadow-box" style="padding:0.5em; border-radius: 5%; width: 50%; margin: 0px; height: 30%;">
@@ -168,24 +167,21 @@
 
         <!-- Vestimenta -->
         <section class="container">
-            <div class="content" style="width: 100%;">
-                <div>
-                    <p class="title">Código de vestimenta</p>
-                    <h3>Hombres y Mujeres</h3>
-                    <p class="subtitle">Semiformal</p>
-                    <img src="./assets/imgs/vestimenta.png" loading="lazy" alt="Codigo de vestimenta" class="image">
-                </div>
+            <div style="width: 100%;">
+                <p class="title">Código de vestimenta</p>
+                <h3>Hombres y Mujeres</h3>
+                <p class="subtitle">Semiformal</p>
+                <img src="./assets/imgs/vestimenta.png" loading="lazy" alt="Codigo de vestimenta" class="image">
             </div>
         </section>
 
 
         <!-- Confirmación -->
         <section class="container" style="background-image:url('./assets/imgs/fondo-1.avif')">
-            <div class="container" style="width: 100%;">
+            <div class="container">
                 <div class="box" style="border-radius: 5%; width: 70%; max-width: 300px;">
                     <p class="subtitle">Reserva tu lugar</p>
                     <p class="title">RSVP</p>
-                    <!-- Pendiente: Linea -->
                     <p>Espero de corazón puedas acompañarme
                     por favor confirma tu asistencia para agregarte
                     a mi lista de invitados.<br>
@@ -203,7 +199,7 @@
         <!-- Galeria -->
         <section class="container" style="flex-direction: column;">
             <p class="title">Galeria</p>
-            <div class="container" style="width: 100%;">
+            <div class="container">
                 <button onclick="move(-1)" class="gallery-button"><i class="ri-arrow-left-s-line"></i></button>
                 <img id="Galeria-1" class="gallery image" style="width: 800px; max-width: 80%;" src="./assets/imgs/Galeria/IMG (1).webp">
                 <button onclick="move(1)" class="gallery-button"><i class="ri-arrow-right-s-line"></i></button>
@@ -215,7 +211,7 @@
             <div class="content shadow-box-dark", style="background-color: white; border-radius: 5%;">
                 <!-- Linea -->
                 <h1>Renata Graciela</h1>
-                <h2 style="color:rgb(201, 19, 165); font-weight: 400">¡Los esperamos!</h2>
+                <h2 style="color: black;">¡Los esperamos!</h2>
                 <img src="./assets/imgs/Despedida.jpg" alt="Foto Sofía" loading="lazy" class="image-rounded">
             </div>
         </section>
